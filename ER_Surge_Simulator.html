@@ -1,0 +1,300 @@
+<title>ER Surge Simulator</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+/* Layout: control desk on the left, live readout on the right; simulation strip full width below */
+:root{
+  --bg:#EEF2F3; --surface:#FFFFFF; --ink:#13222B; --muted:#5A6B75; --line:#D3DCE0;
+  --accent:#0D6C76; --accent-soft:#D7ECEE; --surge:#BE3E12; --surge-soft:#F8E1D6; --ok:#2F7A3B;
+  --f-display:"Archivo","Segoe UI",system-ui,sans-serif;
+  --f-body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0C1418; --surface:#132026; --ink:#E2EBEE; --muted:#8FA3AC; --line:#25363D;
+  --accent:#43B6C0; --accent-soft:#163A40; --surge:#F0894E; --surge-soft:#3D2418; --ok:#6CC27A; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0C1418; --surface:#132026; --ink:#E2EBEE; --muted:#8FA3AC; --line:#25363D;
+  --accent:#43B6C0; --accent-soft:#163A40; --surge:#F0894E; --surge-soft:#3D2418; --ok:#6CC27A; color-scheme:dark}
+
+body{background:var(--bg);color:var(--ink);font:16px/1.5 var(--f-body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 48px}
+.wrap{max-width:1120px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+h1,h2{font-family:var(--f-display);margin:0;text-wrap:balance;letter-spacing:-.01em}
+h1{font-size:clamp(1.6rem,3.6vw,2.3rem);font-weight:800}
+h2{font-size:1.1rem;font-weight:700}
+.sub{color:var(--muted);margin:4px 0 0;max-width:70ch}
+.label{font:600 .72rem/1 var(--f-body);text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.grid{display:grid;grid-template-columns:minmax(0,360px) minmax(0,1fr);gap:20px}
+@media (max-width:820px){.grid{grid-template-columns:1fr}}
+
+/* controls */
+.field{display:flex;flex-direction:column;gap:8px}
+.seg{display:flex;flex-wrap:wrap;gap:6px}
+.seg button{font:600 .9rem var(--f-body);color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:6px;padding:6px 10px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.seg button:focus-visible,.btn:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+input[type=range]{width:100%;accent-color:var(--accent)}
+.aqirow{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.aqival{font:600 1.4rem var(--f-mono)}
+.aqiband{display:grid;grid-template-columns:repeat(6,1fr);height:6px;border-radius:3px;overflow:hidden}
+.aqiband span:nth-child(1){background:#3E9E4F}.aqiband span:nth-child(2){background:#9BBF3A}
+.aqiband span:nth-child(3){background:#E2C02B}.aqiband span:nth-child(4){background:#E5862B}
+.aqiband span:nth-child(5){background:#D2452D}.aqiband span:nth-child(6){background:#8E1D2B}
+.cat{font-weight:600}
+.switch{display:flex;align-items:center;gap:10px;cursor:pointer}
+.switch input{width:20px;height:20px;accent-color:var(--accent)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+select,input[type=number]{font:500 .95rem var(--f-mono);color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:7px 8px;width:100%}
+.presets{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:500 .82rem var(--f-body);color:var(--accent);background:var(--accent-soft);border:0;border-radius:999px;padding:5px 10px;cursor:pointer}
+
+/* readout */
+.readout{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+@media (max-width:560px){.readout{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.cell{background:var(--surface);padding:14px;display:flex;flex-direction:column;gap:6px}
+.big{font:600 clamp(1.7rem,4vw,2.3rem)/1 var(--f-mono);font-variant-numeric:tabular-nums}
+.note{font-size:.85rem;color:var(--muted)}
+.surgebar{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:8px;background:var(--accent-soft)}
+.surgebar.hot{background:var(--surge-soft)}
+.surgebar .pct{font:700 1.5rem var(--f-mono)}
+.surgebar.hot .pct{color:var(--surge)}
+.level{font:700 .72rem var(--f-body);letter-spacing:.08em;text-transform:uppercase;padding:4px 8px;border-radius:4px;background:var(--surface);white-space:nowrap}
+
+/* factor steps */
+.steps{display:flex;flex-direction:column;gap:6px}
+.step{display:grid;grid-template-columns:minmax(0,150px) minmax(0,1fr) 58px 48px;align-items:center;gap:10px;font-size:.9rem}
+.step .track{height:14px;background:var(--bg);border-radius:3px;position:relative;overflow:hidden}
+.step .fill{position:absolute;top:0;bottom:0;background:var(--accent);opacity:.85}
+.step .fill.up{background:var(--surge)}
+.step .eff{text-align:right}
+.step .tot{text-align:right;font-weight:600}
+@media (max-width:480px){.step{grid-template-columns:minmax(0,110px) minmax(0,1fr) 52px 40px;font-size:.82rem}}
+svg text{fill:var(--muted);font:11px var(--f-mono)}
+.chartbox{overflow-x:auto}
+
+.simhead{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:12px}
+.simctl{display:flex;flex-wrap:wrap;gap:10px;align-items:end}
+.simctl .field{min-width:140px}
+.btn{font:700 .9rem var(--f-display);color:var(--surface);background:var(--accent);border:0;border-radius:6px;padding:9px 16px;cursor:pointer}
+.compare{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.compare > div{border:1px solid var(--line);border-radius:8px;padding:12px 14px;display:flex;flex-direction:column;gap:4px}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:.85rem;color:var(--muted)}
+.key{display:inline-block;width:14px;height:10px;border-radius:2px;margin-right:6px;vertical-align:middle}
+details{font-size:.92rem}
+summary{cursor:pointer;font-weight:600}
+table{border-collapse:collapse;font-variant-numeric:tabular-nums}
+td,th{padding:5px 12px 5px 0;text-align:left;border-bottom:1px solid var(--line)}
+.eq{font-family:var(--f-mono);font-size:.85rem;background:var(--bg);padding:10px 12px;border-radius:6px;overflow-x:auto;white-space:nowrap}
+@media (prefers-reduced-motion:no-preference){.fill{transition:width .25s ease,left .25s ease}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="label">Predictive Analytics · CSE3141 · Kashish Gupta · 2427030366</div>
+    <h1>ER Surge Simulator</h1>
+    <p class="sub">Set tomorrow's conditions and see how many patients the Negative Binomial model expects, and how many doctors and nurses to roster. The model was trained on 2023–24 data and tested on 2025.</p>
+  </header>
+
+  <div class="grid">
+    <section class="panel" aria-label="Conditions">
+      <h2>Conditions</h2>
+      <div class="field"><span class="label">Day of week</span><div class="seg" id="day"></div></div>
+      <div class="field"><span class="label">Weather alert</span><div class="seg" id="wx"></div></div>
+      <div class="field">
+        <div class="aqirow"><label class="label" for="aqi">Air Quality Index</label><span><span class="aqival mono" id="aqiv"></span> <span class="cat" id="aqicat"></span></span></div>
+        <input type="range" id="aqi" min="0" max="500" step="5" value="180">
+        <div class="aqiband" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+      </div>
+      <label class="switch"><input type="checkbox" id="flu"> <span>Flu season</span></label>
+      <div class="row2">
+        <div class="field"><label class="label" for="ppd">Patients / doctor</label><input type="number" id="ppd" min="5" max="60" value="20"></div>
+        <div class="field"><label class="label" for="ppn">Patients / nurse</label><input type="number" id="ppn" min="2" max="30" value="8"></div>
+      </div>
+      <div class="field"><label class="label" for="svc">Staff for</label>
+        <select id="svc"><option value="0.8">80th percentile (busy on 1 day in 5)</option><option value="0.9" selected>90th percentile (busy on 1 day in 10)</option><option value="0.95">95th percentile (busy on 1 day in 20)</option></select></div>
+      <div class="field"><span class="label">Try a scenario</span><div class="presets" id="presets"></div></div>
+    </section>
+
+    <section class="panel" aria-label="Forecast">
+      <h2>Forecast for this day</h2>
+      <div class="readout">
+        <div class="cell"><span class="label">Expected</span><span class="big" id="mu"></span><span class="note">patients (average)</span></div>
+        <div class="cell"><span class="label">Plan for</span><span class="big" id="q"></span><span class="note" id="qnote"></span></div>
+        <div class="cell"><span class="label">Doctors</span><span class="big" id="doc"></span><span class="note">on duty</span></div>
+        <div class="cell"><span class="label">Nurses</span><span class="big" id="nur"></span><span class="note">on duty</span></div>
+      </div>
+      <div class="surgebar" id="surgebar"><span class="pct" id="surge"></span><span class="note" style="flex:1;min-width:0">compared with a normal day: Thursday, no alert, AQI 90, no flu (≈120 patients)</span><span class="level" id="level"></span></div>
+
+      <div class="field"><span class="label">How each factor changes the count</span>
+        <div class="steps" id="steps"></div>
+        <span class="note">Each factor multiplies the count. Bars show the running total, starting from the model's Monday baseline.</span>
+      </div>
+
+      <div class="field"><span class="label">Likely range of patients</span>
+        <div class="chartbox"><svg id="dist" viewBox="0 0 640 170" width="100%" role="img" aria-label="Probability distribution of patient count"></svg></div>
+        <span class="note" id="distnote"></span>
+      </div>
+    </section>
+  </div>
+
+  <section class="panel" aria-label="Month simulation">
+    <div class="simhead">
+      <div><h2>Simulate a month</h2><p class="sub">Generates 30 days of realistic Delhi conditions, rosters staff from the forecast, then draws the actual patient count each day at random from the model. It compares this with a fixed roster that uses the same total staff every day.</p></div>
+      <div class="simctl">
+        <div class="field"><label class="label" for="month">Month (2026)</label>
+          <select id="month"></select></div>
+        <button class="btn" id="run">Run simulation</button>
+      </div>
+    </div>
+    <div class="legend"><span><i class="key" style="background:var(--muted);opacity:.45"></i>Actual patients</span><span><i class="key" style="background:var(--surge)"></i>Day over capacity</span><span><i class="key" style="background:var(--accent);height:3px"></i>Forecast roster capacity</span><span><i class="key" style="border-top:2px dashed var(--ink);height:0"></i>Fixed roster capacity</span></div>
+    <div class="chartbox"><svg id="sim" viewBox="0 0 1060 260" width="100%" role="img" aria-label="Daily patients versus staffing capacity"></svg></div>
+    <div class="compare" id="compare"></div>
+  </section>
+
+  <section class="panel">
+    <details>
+      <summary>Model details</summary>
+      <p>Negative Binomial regression. The log of expected admissions is a weighted sum of the features; each weight (β) becomes a multiplier e<sup>β</sup>.</p>
+      <div class="eq">log(μ) = 4.6815 + 0.2372·Heatwave + 0.1575·Coldwave − 0.0742·Tue − 0.1107·Wed − 0.1181·Thu − 0.1081·Fri − 0.2103·Sat − 0.2346·Sun + 0.000913·AQI + 0.1672·Flu + 0.0459·Trend</div>
+      <p>Dispersion α = 0.0167, so variance = μ + 0.0167·μ². Trend is set to 3.0 years (start of 2026). Staffing ratios are planning assumptions you can change above.</p>
+    </details>
+  </section>
+</div>
+
+<script>
+const B={int:4.68149,heat:0.237233,cold:0.157467,aqi:0.000913,flu:0.167242,trend:0.045944,alpha:0.016656};
+const DAYB={Monday:0,Tuesday:-0.074197,Wednesday:-0.110687,Thursday:-0.118143,Friday:-0.108128,Saturday:-0.210299,Sunday:-0.234556};
+const DAYS=Object.keys(DAYB), WX=["No Alert","Heatwave","Coldwave"], TREND=3.0;
+const S={day:"Monday",wx:"No Alert",aqi:180,flu:false};
+const $=id=>document.getElementById(id);
+
+function mu(c){return Math.exp(B.int+DAYB[c.day]+(c.wx==="Heatwave"?B.heat:0)+(c.wx==="Coldwave"?B.cold:0)+B.aqi*c.aqi+(c.flu?B.flu:0)+B.trend*TREND)}
+function pmfArr(m,max){const r=1/B.alpha,p=r/(r+m);const a=[Math.pow(p,r)];for(let k=1;k<=max;k++)a.push(a[k-1]*(k-1+r)/k*(1-p));return a}
+function quantile(m,q){const a=pmfArr(m,Math.ceil(m*3+60));let c=0;for(let k=0;k<a.length;k++){c+=a[k];if(c>=q)return k}return a.length}
+const BASE=mu({day:"Thursday",wx:"No Alert",aqi:90,flu:false});
+function aqiCat(v){return v<=50?"Good":v<=100?"Satisfactory":v<=200?"Moderate":v<=300?"Poor":v<=400?"Very Poor":"Severe"}
+
+function seg(el,opts,key){opts.forEach(o=>{const b=document.createElement("button");b.type="button";b.textContent=key==="day"?o.slice(0,3):o;b.title=o;b.onclick=()=>{S[key]=o;render()};b.dataset.v=o;el.appendChild(b)})}
+seg($("day"),DAYS,"day");seg($("wx"),WX,"wx");
+
+const PRESETS=[
+ ["Normal Thursday",{day:"Thursday",wx:"No Alert",aqi:90,flu:false}],
+ ["Heatwave Monday",{day:"Monday",wx:"Heatwave",aqi:180,flu:false}],
+ ["Diwali-week smog",{day:"Tuesday",wx:"No Alert",aqi:450,flu:false}],
+ ["Worst case",{day:"Monday",wx:"Coldwave",aqi:450,flu:true}]];
+PRESETS.forEach(([n,c])=>{const b=document.createElement("button");b.className="chip";b.type="button";b.textContent=n;b.onclick=()=>{Object.assign(S,c);render()};$("presets").appendChild(b)});
+
+$("aqi").oninput=e=>{S.aqi=+e.target.value;render()};
+$("flu").onchange=e=>{S.flu=e.target.checked;render()};
+["ppd","ppn","svc"].forEach(id=>$(id).addEventListener("input",render));
+
+function ratios(){return{ppd:Math.max(1,+$("ppd").value||20),ppn:Math.max(1,+$("ppn").value||8),svc:+$("svc").value}}
+
+function render(){
+  document.querySelectorAll("#day button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.v===S.day));
+  document.querySelectorAll("#wx button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.v===S.wx));
+  $("aqi").value=S.aqi;$("flu").checked=S.flu;
+  $("aqiv").textContent=S.aqi;$("aqicat").textContent=aqiCat(S.aqi);
+  const R=ratios(), m=mu(S), q=quantile(m,R.svc);
+  $("mu").textContent=Math.round(m);$("q").textContent=q;$("qnote").textContent=Math.round(R.svc*100)+"th percentile";
+  $("doc").textContent=Math.ceil(q/R.ppd);$("nur").textContent=Math.ceil(q/R.ppn);
+  const sp=Math.round((m/BASE-1)*100);
+  $("surge").textContent=(sp>=0?"+":"")+sp+"%";
+  const lvl=sp<15?"Routine":sp<40?"Elevated":sp<80?"High surge":"Critical surge";
+  $("level").textContent=lvl;$("surgebar").classList.toggle("hot",sp>=40);
+
+  // factor steps
+  const f=[["Monday baseline",B.int+B.trend*TREND,true],
+    [S.day,DAYB[S.day]],
+    [S.wx==="No Alert"?"No weather alert":S.wx,S.wx==="Heatwave"?B.heat:S.wx==="Coldwave"?B.cold:0],
+    ["AQI "+S.aqi,B.aqi*S.aqi],
+    [S.flu?"Flu season":"Not flu season",S.flu?B.flu:0]];
+  let lg=0;const MAX=320;let html="";
+  f.forEach(([n,b,base])=>{const prev=Math.exp(lg);lg+=b;const cur=Math.exp(lg);
+    const eff=base?"":((Math.exp(b)-1)*100>=0?"+":"")+((Math.exp(b)-1)*100).toFixed(0)+"%";
+    const lo=Math.min(prev,cur),hi=Math.max(prev,cur);
+    const fill=base?`<div class="fill" style="left:0;width:${cur/MAX*100}%"></div>`:
+      `<div class="fill" style="left:0;width:${lo/MAX*100}%;opacity:.35"></div><div class="fill ${b>0?"up":""}" style="left:${lo/MAX*100}%;width:${(hi-lo)/MAX*100}%"></div>`;
+    html+=`<div class="step"><span>${n}</span><div class="track">${fill}</div><span class="eff mono">${eff}</span><span class="tot mono">${Math.round(cur)}</span></div>`});
+  $("steps").innerHTML=html;
+  drawDist(m,q);
+}
+
+function drawDist(m,q){
+  const W=640,H=170,L=34,Rr=10,T=10,Bt=26, a=pmfArr(m,400);
+  const lo=Math.max(0,Math.floor(m-3.2*Math.sqrt(m+B.alpha*m*m))),hi=Math.ceil(m+3.6*Math.sqrt(m+B.alpha*m*m));
+  const ymax=Math.max(...a.slice(lo,hi+1))*1.1, x=k=>L+(k-lo)/(hi-lo)*(W-L-Rr), y=v=>H-Bt-v/ymax*(H-Bt-T);
+  let s="";
+  for(let i=0;i<=3;i++){const yy=T+i*(H-Bt-T)/3;s+=`<line x1="${L}" x2="${W-Rr}" y1="${yy}" y2="${yy}" stroke="var(--line)"/>`}
+  const bw=Math.max(1,(W-L-Rr)/(hi-lo)-0.6);
+  for(let k=lo;k<=hi;k++)s+=`<rect x="${x(k)-bw/2}" y="${y(a[k])}" width="${bw}" height="${H-Bt-y(a[k])}" fill="${k>q?"var(--surge)":"var(--accent)"}" opacity="${k>q?.9:.55}"/>`;
+  s+=`<line x1="${x(q)}" x2="${x(q)}" y1="${T}" y2="${H-Bt}" stroke="var(--ink)" stroke-dasharray="4 3"/><text x="${Math.min(x(q)+5,W-120)}" y="${T+11}" style="fill:var(--ink)">staff for ${q}</text>`;
+  const step=(hi-lo)>120?40:20;
+  for(let k=Math.ceil(lo/step)*step;k<=hi;k+=step)s+=`<text x="${x(k)}" y="${H-8}" text-anchor="middle">${k}</text>`;
+  s+=`<text x="${L}" y="${H-8}" text-anchor="end" dx="-6">pts</text>`;
+  $("dist").innerHTML=s;
+  const over=1-(+$("svc").value);
+  $("distnote").textContent=`Most days land between ${quantile(m,.1)} and ${quantile(m,.9)} patients. Orange bars are days busier than the roster (about ${Math.round(over*100)}% of days like this).`;
+}
+
+/* ---------- month simulation ---------- */
+let seed=7;function rnd(){seed=(seed*1664525+1013904223)>>>0;return seed/4294967296}
+function randn(){let u=0;while(!u)u=rnd();return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*rnd())}
+function gamma(k){const d=k-1/3,c=1/Math.sqrt(9*d);for(;;){let x,v;do{x=randn();v=1+c*x}while(v<=0);v=v*v*v;const u=rnd();if(Math.log(u)<.5*x*x+d-d*v+d*Math.log(v))return d*v}}
+function poisson(l){const L=Math.exp(-l);let k=0,p=1;do{k++;p*=rnd()}while(p>L);return k-1}
+function nbSample(m){const r=1/B.alpha;return poisson(gamma(r)*m/r)}
+
+const MN=["January","February","March","April","May","June","July","August","September","October","November","December"];
+MN.forEach((n,i)=>{const o=document.createElement("option");o.value=i+1;o.textContent=n;if(i===10)o.selected=true;$("month").appendChild(o)});
+
+function simulate(){
+  const mo=+$("month").value, R=ratios(), days=[];
+  const nd=new Date(2026,mo,0).getDate(), n=Math.min(30,nd);
+  for(let d=1;d<=n;d++){
+    const dt=new Date(2026,mo-1,d), doy=Math.round((dt-new Date(2026,0,0))/864e5);
+    const aqi=Math.round(Math.min(490,Math.max(35,210+140*Math.cos(2*Math.PI*(doy-340)/365)+45*randn())));
+    const hp=(mo===5||mo===6)?.35:mo===4?.08:0, cp=(mo===12||mo===1)?.25:0, u=rnd();
+    const wx=u<hp?"Heatwave":u<cp?"Coldwave":"No Alert";
+    const c={day:DAYS[(dt.getDay()+6)%7],wx,aqi,flu:[1,2,7,8,9].includes(mo)};
+    const m=mu(c), plan=quantile(m,R.svc), actual=nbSample(m);
+    days.push({d,c,m,plan,actual});
+  }
+  const fixed=Math.round(days.reduce((s,x)=>s+x.plan,0)/n);
+  drawSim(days,fixed,mo);
+  const overF=days.filter(x=>x.actual>x.plan), overX=days.filter(x=>x.actual>fixed);
+  const sF=overF.reduce((s,x)=>s+x.actual-x.plan,0), sX=overX.reduce((s,x)=>s+x.actual-fixed,0);
+  const wxCount=days.filter(x=>x.c.wx!=="No Alert").length, avgAqi=Math.round(days.reduce((s,x)=>s+x.c.aqi,0)/n);
+  $("compare").innerHTML=`
+   <div><span class="label">Month conditions</span><span class="big" style="font-size:1.5rem">${days.reduce((s,x)=>s+x.actual,0).toLocaleString()}</span><span class="note">patients in ${n} days · avg AQI ${avgAqi} (${aqiCat(avgAqi)}) · ${wxCount} alert day${wxCount===1?"":"s"}${days[0].c.flu?" · flu season":""}</span></div>
+   <div><span class="label">Forecast roster</span><span class="big" style="font-size:1.5rem;color:var(--ok)">${overF.length} day${overF.length===1?"":"s"} over</span><span class="note">${sF} patients beyond capacity in total</span></div>
+   <div><span class="label">Fixed roster (${fixed} capacity daily)</span><span class="big" style="font-size:1.5rem;color:var(--surge)">${overX.length} day${overX.length===1?"":"s"} over</span><span class="note">${sX} patients beyond capacity, using the same total staff</span></div>`;
+}
+
+function drawSim(days,fixed,mo){
+  const W=1060,H=260,L=40,Rr=10,T=12,Bt=34,n=days.length;
+  const ymax=Math.ceil(Math.max(...days.map(x=>Math.max(x.actual,x.plan)),fixed)/50)*50+10;
+  const bw=(W-L-Rr)/n, x=i=>L+i*bw, y=v=>H-Bt-v/ymax*(H-Bt-T);
+  let s="";
+  for(let v=0;v<=ymax;v+=50){s+=`<line x1="${L}" x2="${W-Rr}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${L-6}" y="${y(v)+4}" text-anchor="end">${v}</text>`}
+  days.forEach((t,i)=>{const over=t.actual>t.plan;
+    s+=`<rect x="${x(i)+bw*.18}" y="${y(t.actual)}" width="${bw*.64}" height="${H-Bt-y(t.actual)}" rx="2" fill="${over?"var(--surge)":"var(--muted)"}" opacity="${over?.95:.4}"><title>${t.d} ${MN[mo-1].slice(0,3)} (${t.c.day}): ${t.actual} patients, roster ${t.plan}. AQI ${t.c.aqi}${t.c.wx!=="No Alert"?", "+t.c.wx:""}</title></rect>`;
+    if(i%2===0||n<=16)s+=`<text x="${x(i)+bw/2}" y="${H-18}" text-anchor="middle">${t.d}</text>`;
+    s+=`<text x="${x(i)+bw/2}" y="${H-4}" text-anchor="middle" style="font-size:9px">${t.c.day[0]}</text>`;
+    if(t.c.wx!=="No Alert")s+=`<circle cx="${x(i)+bw/2}" cy="${T+4}" r="3.5" fill="${t.c.wx==="Heatwave"?"var(--surge)":"var(--accent)"}"><title>${t.c.wx}</title></circle>`});
+  let p="";days.forEach((t,i)=>{p+=(i?"L":"M")+x(i)+","+y(t.plan)+" L"+(x(i)+bw)+","+y(t.plan)});
+  s+=`<path d="${p}" fill="none" stroke="var(--accent)" stroke-width="2.5"/>`;
+  s+=`<line x1="${L}" x2="${W-Rr}" y1="${y(fixed)}" y2="${y(fixed)}" stroke="var(--ink)" stroke-width="1.5" stroke-dasharray="6 4"/>`;
+  $("sim").innerHTML=s;
+}
+
+$("run").onclick=()=>{seed=(Date.now()&0xffff)+1;simulate()};
+$("month").onchange=simulate;
+["ppd","ppn","svc"].forEach(id=>$(id).addEventListener("change",simulate));
+render();simulate();
+</script>

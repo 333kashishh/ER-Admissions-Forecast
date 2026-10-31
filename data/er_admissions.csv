@@ -1,0 +1,1097 @@
+date,day_of_week,weather_alert,aqi,flu_season,er_admissions
+2023-01-01,Sunday,Coldwave,350.0,Yes,175
+2023-01-02,Monday,No Alert,288.0,Yes,212
+2023-01-03,Tuesday,No Alert,368.0,Yes,113
+2023-01-04,Wednesday,No Alert,,Yes,123
+2023-01-05,Thursday,No Alert,244.0,Yes,124
+2023-01-06,Friday,No Alert,272.0,Yes,169
+2023-01-07,Saturday,Coldwave,335.0,Yes,197
+2023-01-08,Sunday,No Alert,314.0,Yes,121
+2023-01-09,Monday,No Alert,326.0,Yes,172
+2023-01-10,Tuesday,No Alert,287.0,Yes,149
+2023-01-11,Wednesday,No Alert,364.0,Yes,151
+2023-01-12,Thursday,No Alert,358.0,Yes,154
+2023-01-13,Friday,No Alert,324.0,Yes,168
+2023-01-14,Saturday,No Alert,370.0,Yes,179
+2023-01-15,Sunday,No Alert,339.0,Yes,121
+2023-01-16,Monday,No Alert,278.0,Yes,175
+2023-01-17,Tuesday,No Alert,332.0,Yes,165
+2023-01-18,Wednesday,No Alert,270.0,Yes,169
+2023-01-19,Thursday,Coldwave,351.0,Yes,170
+2023-01-20,Friday,No Alert,308.0,Yes,153
+2023-01-21,Saturday,Coldwave,300.0,Yes,128
+2023-01-22,Sunday,Coldwave,276.0,Yes,146
+2023-01-23,Monday,No Alert,360.0,Yes,186
+2023-01-24,Tuesday,Coldwave,296.0,Yes,153
+2023-01-25,Wednesday,Coldwave,282.0,Yes,188
+2023-01-26,Thursday,Coldwave,284.0,Yes,194
+2023-01-27,Friday,No Alert,322.0,Yes,157
+2023-01-28,Saturday,No Alert,312.0,Yes,126
+2023-01-29,Sunday,Coldwave,312.0,Yes,115
+2023-01-30,Monday,No Alert,311.0,Yes,176
+2023-01-31,Tuesday,No Alert,386.0,Yes,156
+2023-02-01,Wednesday,No Alert,270.0,Yes,178
+2023-02-02,Thursday,No Alert,263.0,Yes,108
+2023-02-03,Friday,No Alert,247.0,Yes,160
+2023-02-04,Saturday,No Alert,309.0,Yes,117
+2023-02-05,Sunday,No Alert,330.0,Yes,135
+2023-02-06,Monday,No Alert,272.0,Yes,146
+2023-02-07,Tuesday,No Alert,238.0,Yes,143
+2023-02-08,Wednesday,No Alert,236.0,Yes,131
+2023-02-09,Thursday,No Alert,300.0,Yes,147
+2023-02-10,Friday,No Alert,302.0,Yes,178
+2023-02-11,Saturday,No Alert,291.0,Yes,80
+2023-02-12,Sunday,No Alert,235.0,Yes,118
+2023-02-13,Monday,No Alert,273.0,Yes,182
+2023-02-14,Tuesday,No Alert,265.0,Yes,152
+2023-02-15,Wednesday,No Alert,268.0,Yes,101
+2023-02-16,Thursday,No Alert,295.0,Yes,163
+2023-02-17,Friday,No Alert,263.0,Yes,157
+2023-02-18,Saturday,No Alert,282.0,Yes,131
+2023-02-19,Sunday,No Alert,252.0,Yes,95
+2023-02-20,Monday,No Alert,259.0,Yes,162
+2023-02-21,Tuesday,No Alert,272.0,Yes,189
+2023-02-22,Wednesday,No Alert,176.0,Yes,153
+2023-02-23,Thursday,No Alert,225.0,Yes,151
+2023-02-24,Friday,No Alert,216.0,Yes,156
+2023-02-25,Saturday,No Alert,206.0,Yes,143
+2023-02-26,Sunday,No Alert,220.0,Yes,135
+2023-02-27,Monday,No Alert,297.0,Yes,180
+2023-02-28,Tuesday,No Alert,188.0,Yes,170
+2023-03-01,Wednesday,No Alert,269.0,No,169
+2023-03-02,Thursday,No Alert,147.0,No,98
+2023-03-03,Friday,No Alert,205.0,No,113
+2023-03-04,Saturday,No Alert,225.0,No,81
+2023-03-05,Sunday,No Alert,242.0,No,127
+2023-03-06,Monday,No Alert,245.0,No,189
+2023-03-07,Tuesday,No Alert,246.0,No,155
+2023-03-08,Wednesday,No Alert,192.0,No,124
+2023-03-09,Thursday,No Alert,185.0,No,120
+2023-03-10,Friday,No Alert,242.0,No,127
+2023-03-11,Saturday,No Alert,192.0,No,95
+2023-03-12,Sunday,No Alert,141.0,No,135
+2023-03-13,Monday,No Alert,145.0,No,114
+2023-03-14,Tuesday,No Alert,152.0,No,148
+2023-03-15,Wednesday,No Alert,214.0,No,77
+2023-03-16,Thursday,No Alert,195.0,No,78
+2023-03-17,Friday,No Alert,218.0,No,115
+2023-03-18,Saturday,No Alert,165.0,No,98
+2023-03-19,Sunday,No Alert,189.0,No,102
+2023-03-20,Monday,No Alert,208.0,No,111
+2023-03-21,Tuesday,No Alert,163.0,No,152
+2023-03-22,Wednesday,No Alert,195.0,No,133
+2023-03-23,Thursday,No Alert,143.0,No,152
+2023-03-24,Friday,No Alert,154.0,No,79
+2023-03-25,Saturday,No Alert,151.0,No,128
+2023-03-26,Sunday,No Alert,112.0,No,81
+2023-03-27,Monday,No Alert,185.0,No,152
+2023-03-28,Tuesday,No Alert,140.0,No,140
+2023-03-29,Wednesday,No Alert,159.0,No,115
+2023-03-30,Thursday,No Alert,178.0,No,102
+2023-03-31,Friday,No Alert,174.0,No,115
+2023-04-01,Saturday,No Alert,182.0,No,127
+2023-04-02,Sunday,No Alert,146.0,No,132
+2023-04-03,Monday,No Alert,129.0,No,131
+2023-04-04,Tuesday,No Alert,142.0,No,143
+2023-04-05,Wednesday,No Alert,68.0,No,126
+2023-04-06,Thursday,No Alert,76.0,No,78
+2023-04-07,Friday,No Alert,80.0,No,74
+2023-04-08,Saturday,Heatwave,,No,142
+2023-04-09,Sunday,No Alert,153.0,No,104
+2023-04-10,Monday,No Alert,92.0,No,119
+2023-04-11,Tuesday,No Alert,114.0,No,126
+2023-04-12,Wednesday,No Alert,188.0,No,112
+2023-04-13,Thursday,No Alert,111.0,No,93
+2023-04-14,Friday,No Alert,158.0,No,120
+2023-04-15,Saturday,No Alert,81.0,No,76
+2023-04-16,Sunday,No Alert,112.0,No,112
+2023-04-17,Monday,No Alert,77.0,No,85
+2023-04-18,Tuesday,No Alert,103.0,No,77
+2023-04-19,Wednesday,No Alert,154.0,No,84
+2023-04-20,Thursday,No Alert,37.0,No,84
+2023-04-21,Friday,No Alert,132.0,No,111
+2023-04-22,Saturday,Heatwave,121.0,No,121
+2023-04-23,Sunday,No Alert,82.0,No,100
+2023-04-24,Monday,No Alert,42.0,No,96
+2023-04-25,Tuesday,No Alert,109.0,No,117
+2023-04-26,Wednesday,No Alert,80.0,No,75
+2023-04-27,Thursday,No Alert,113.0,No,88
+2023-04-28,Friday,No Alert,102.0,No,68
+2023-04-29,Saturday,No Alert,172.0,No,133
+2023-04-30,Sunday,No Alert,87.0,No,89
+2023-05-01,Monday,Heatwave,51.0,No,144
+2023-05-02,Tuesday,No Alert,103.0,No,83
+2023-05-03,Wednesday,Heatwave,104.0,No,181
+2023-05-04,Thursday,No Alert,154.0,No,119
+2023-05-05,Friday,No Alert,129.0,No,127
+2023-05-06,Saturday,No Alert,106.0,No,91
+2023-05-07,Sunday,No Alert,155.0,No,90
+2023-05-08,Monday,No Alert,35.0,No,80
+2023-05-09,Tuesday,Heatwave,58.0,No,125
+2023-05-10,Wednesday,No Alert,44.0,No,103
+2023-05-11,Thursday,Heatwave,67.0,No,131
+2023-05-12,Friday,No Alert,35.0,No,98
+2023-05-13,Saturday,No Alert,111.0,No,105
+2023-05-14,Sunday,No Alert,71.0,No,104
+2023-05-15,Monday,Heatwave,35.0,No,151
+2023-05-16,Tuesday,No Alert,35.0,No,114
+2023-05-17,Wednesday,No Alert,93.0,No,105
+2023-05-18,Thursday,No Alert,116.0,No,106
+2023-05-19,Friday,No Alert,167.0,No,112
+2023-05-20,Saturday,No Alert,207.0,No,123
+2023-05-21,Sunday,No Alert,94.0,No,69
+2023-05-22,Monday,No Alert,35.0,No,112
+2023-05-23,Tuesday,Heatwave,35.0,No,120
+2023-05-24,Wednesday,Heatwave,86.0,No,105
+2023-05-25,Thursday,Heatwave,37.0,No,116
+2023-05-26,Friday,Heatwave,54.0,No,130
+2023-05-27,Saturday,No Alert,45.0,No,80
+2023-05-28,Sunday,No Alert,66.0,No,109
+2023-05-29,Monday,No Alert,119.0,No,106
+2023-05-30,Tuesday,No Alert,78.0,No,62
+2023-05-31,Wednesday,No Alert,64.0,No,127
+2023-06-01,Thursday,No Alert,35.0,No,123
+2023-06-02,Friday,No Alert,35.0,No,102
+2023-06-03,Saturday,No Alert,48.0,No,95
+2023-06-04,Sunday,No Alert,68.0,No,95
+2023-06-05,Monday,Heatwave,150.0,No,180
+2023-06-06,Tuesday,No Alert,76.0,No,104
+2023-06-07,Wednesday,No Alert,114.0,No,123
+2023-06-08,Thursday,No Alert,48.0,No,119
+2023-06-09,Friday,No Alert,35.0,No,122
+2023-06-10,Saturday,No Alert,35.0,No,91
+2023-06-11,Sunday,Heatwave,38.0,No,93
+2023-06-12,Monday,Heatwave,166.0,No,171
+2023-06-13,Tuesday,No Alert,35.0,No,126
+2023-06-14,Wednesday,Heatwave,109.0,No,150
+2023-06-15,Thursday,Heatwave,35.0,No,127
+2023-06-16,Friday,No Alert,114.0,No,107
+2023-06-17,Saturday,No Alert,90.0,No,105
+2023-06-18,Sunday,Heatwave,66.0,No,110
+2023-06-19,Monday,No Alert,71.0,No,116
+2023-06-20,Tuesday,No Alert,44.0,No,94
+2023-06-21,Wednesday,Heatwave,94.0,No,127
+2023-06-22,Thursday,No Alert,54.0,No,90
+2023-06-23,Friday,No Alert,35.0,No,109
+2023-06-24,Saturday,No Alert,35.0,No,119
+2023-06-25,Sunday,No Alert,85.0,No,95
+2023-06-26,Monday,Heatwave,149.0,No,167
+2023-06-27,Tuesday,No Alert,86.0,No,134
+2023-06-28,Wednesday,No Alert,74.0,No,103
+2023-06-29,Thursday,No Alert,93.0,No,102
+2023-06-30,Friday,No Alert,140.0,No,98
+2023-07-01,Saturday,No Alert,92.0,Yes,99
+2023-07-02,Sunday,No Alert,65.0,Yes,118
+2023-07-03,Monday,No Alert,134.0,Yes,141
+2023-07-04,Tuesday,No Alert,105.0,Yes,141
+2023-07-05,Wednesday,No Alert,156.0,Yes,112
+2023-07-06,Thursday,No Alert,96.0,Yes,163
+2023-07-07,Friday,No Alert,35.0,Yes,140
+2023-07-08,Saturday,No Alert,35.0,Yes,94
+2023-07-09,Sunday,No Alert,166.0,Yes,82
+2023-07-10,Monday,No Alert,170.0,Yes,140
+2023-07-11,Tuesday,No Alert,86.0,Yes,150
+2023-07-12,Wednesday,No Alert,78.0,Yes,139
+2023-07-13,Thursday,No Alert,163.0,Yes,149
+2023-07-14,Friday,No Alert,48.0,Yes,148
+2023-07-15,Saturday,No Alert,59.0,Yes,89
+2023-07-16,Sunday,No Alert,130.0,Yes,129
+2023-07-17,Monday,No Alert,85.0,Yes,163
+2023-07-18,Tuesday,No Alert,104.0,Yes,149
+2023-07-19,Wednesday,No Alert,98.0,Yes,114
+2023-07-20,Thursday,No Alert,123.0,Yes,129
+2023-07-21,Friday,No Alert,172.0,Yes,112
+2023-07-22,Saturday,No Alert,115.0,Yes,150
+2023-07-23,Sunday,No Alert,141.0,Yes,152
+2023-07-24,Monday,No Alert,35.0,Yes,134
+2023-07-25,Tuesday,No Alert,114.0,Yes,142
+2023-07-26,Wednesday,No Alert,80.0,Yes,148
+2023-07-27,Thursday,No Alert,,Yes,120
+2023-07-28,Friday,No Alert,82.0,Yes,170
+2023-07-29,Saturday,No Alert,108.0,Yes,138
+2023-07-30,Sunday,No Alert,167.0,Yes,117
+2023-07-31,Monday,No Alert,68.0,Yes,146
+2023-08-01,Tuesday,No Alert,131.0,Yes,149
+2023-08-02,Wednesday,No Alert,109.0,Yes,158
+2023-08-03,Thursday,No Alert,118.0,Yes,144
+2023-08-04,Friday,No Alert,180.0,Yes,121
+2023-08-05,Saturday,No Alert,161.0,Yes,124
+2023-08-06,Sunday,No Alert,199.0,Yes,108
+2023-08-07,Monday,No Alert,134.0,Yes,150
+2023-08-08,Tuesday,No Alert,112.0,Yes,116
+2023-08-09,Wednesday,No Alert,136.0,Yes,134
+2023-08-10,Thursday,No Alert,159.0,Yes,143
+2023-08-11,Friday,No Alert,158.0,Yes,149
+2023-08-12,Saturday,No Alert,103.0,Yes,107
+2023-08-13,Sunday,No Alert,158.0,Yes,113
+2023-08-14,Monday,No Alert,167.0,Yes,142
+2023-08-15,Tuesday,No Alert,272.0,Yes,189
+2023-08-16,Wednesday,No Alert,246.0,Yes,138
+2023-08-17,Thursday,No Alert,125.0,Yes,114
+2023-08-18,Friday,No Alert,153.0,Yes,131
+2023-08-19,Saturday,No Alert,102.0,Yes,156
+2023-08-20,Sunday,No Alert,144.0,Yes,108
+2023-08-21,Monday,No Alert,187.0,Yes,134
+2023-08-22,Tuesday,No Alert,229.0,Yes,150
+2023-08-23,Wednesday,No Alert,144.0,Yes,135
+2023-08-24,Thursday,No Alert,150.0,Yes,135
+2023-08-25,Friday,No Alert,85.0,Yes,119
+2023-08-26,Saturday,No Alert,177.0,Yes,155
+2023-08-27,Sunday,No Alert,139.0,Yes,86
+2023-08-28,Monday,No Alert,165.0,Yes,124
+2023-08-29,Tuesday,No Alert,152.0,Yes,137
+2023-08-30,Wednesday,No Alert,190.0,Yes,95
+2023-08-31,Thursday,No Alert,117.0,Yes,144
+2023-09-01,Friday,No Alert,133.0,Yes,125
+2023-09-02,Saturday,No Alert,297.0,Yes,107
+2023-09-03,Sunday,No Alert,145.0,Yes,109
+2023-09-04,Monday,No Alert,156.0,Yes,131
+2023-09-05,Tuesday,No Alert,291.0,Yes,143
+2023-09-06,Wednesday,No Alert,341.0,Yes,194
+2023-09-07,Thursday,No Alert,160.0,Yes,161
+2023-09-08,Friday,No Alert,199.0,Yes,161
+2023-09-09,Saturday,No Alert,233.0,Yes,146
+2023-09-10,Sunday,No Alert,298.0,Yes,141
+2023-09-11,Monday,No Alert,178.0,Yes,150
+2023-09-12,Tuesday,No Alert,214.0,Yes,106
+2023-09-13,Wednesday,No Alert,262.0,Yes,155
+2023-09-14,Thursday,No Alert,249.0,Yes,156
+2023-09-15,Friday,No Alert,215.0,Yes,123
+2023-09-16,Saturday,No Alert,229.0,Yes,107
+2023-09-17,Sunday,No Alert,175.0,Yes,110
+2023-09-18,Monday,No Alert,229.0,Yes,168
+2023-09-19,Tuesday,No Alert,230.0,Yes,140
+2023-09-20,Wednesday,No Alert,254.0,Yes,133
+2023-09-21,Thursday,No Alert,221.0,Yes,132
+2023-09-22,Friday,No Alert,270.0,Yes,173
+2023-09-23,Saturday,No Alert,297.0,Yes,141
+2023-09-24,Sunday,No Alert,260.0,Yes,78
+2023-09-25,Monday,No Alert,271.0,Yes,155
+2023-09-26,Tuesday,No Alert,260.0,Yes,189
+2023-09-27,Wednesday,No Alert,260.0,Yes,131
+2023-09-28,Thursday,No Alert,230.0,Yes,134
+2023-09-29,Friday,No Alert,279.0,Yes,144
+2023-09-30,Saturday,No Alert,262.0,Yes,117
+2023-10-01,Sunday,No Alert,363.0,No,145
+2023-10-02,Monday,No Alert,342.0,No,149
+2023-10-03,Tuesday,No Alert,291.0,No,116
+2023-10-04,Wednesday,No Alert,241.0,No,120
+2023-10-05,Thursday,No Alert,227.0,No,122
+2023-10-06,Friday,No Alert,333.0,No,123
+2023-10-07,Saturday,No Alert,294.0,No,135
+2023-10-08,Sunday,No Alert,305.0,No,109
+2023-10-09,Monday,No Alert,207.0,No,125
+2023-10-10,Tuesday,No Alert,330.0,No,174
+2023-10-11,Wednesday,No Alert,310.0,No,147
+2023-10-12,Thursday,No Alert,242.0,No,107
+2023-10-13,Friday,No Alert,273.0,No,134
+2023-10-14,Saturday,No Alert,308.0,No,116
+2023-10-15,Sunday,No Alert,300.0,No,117
+2023-10-16,Monday,No Alert,286.0,No,121
+2023-10-17,Tuesday,No Alert,297.0,No,141
+2023-10-18,Wednesday,No Alert,292.0,No,89
+2023-10-19,Thursday,No Alert,312.0,No,141
+2023-10-20,Friday,No Alert,373.0,No,154
+2023-10-21,Saturday,No Alert,193.0,No,91
+2023-10-22,Sunday,No Alert,299.0,No,129
+2023-10-23,Monday,No Alert,320.0,No,155
+2023-10-24,Tuesday,No Alert,327.0,No,166
+2023-10-25,Wednesday,No Alert,298.0,No,135
+2023-10-26,Thursday,No Alert,238.0,No,147
+2023-10-27,Friday,No Alert,333.0,No,108
+2023-10-28,Saturday,No Alert,397.0,No,173
+2023-10-29,Sunday,No Alert,252.0,No,109
+2023-10-30,Monday,No Alert,361.0,No,129
+2023-10-31,Tuesday,No Alert,309.0,No,120
+2023-11-01,Wednesday,No Alert,323.0,No,173
+2023-11-02,Thursday,No Alert,279.0,No,146
+2023-11-03,Friday,No Alert,313.0,No,137
+2023-11-04,Saturday,No Alert,388.0,No,124
+2023-11-05,Sunday,No Alert,357.0,No,100
+2023-11-06,Monday,No Alert,410.0,No,145
+2023-11-07,Tuesday,No Alert,386.0,No,159
+2023-11-08,Wednesday,No Alert,354.0,No,119
+2023-11-09,Thursday,No Alert,414.0,No,137
+2023-11-10,Friday,No Alert,356.0,No,151
+2023-11-11,Saturday,No Alert,374.0,No,100
+2023-11-12,Sunday,No Alert,325.0,No,129
+2023-11-13,Monday,No Alert,342.0,No,130
+2023-11-14,Tuesday,No Alert,309.0,No,103
+2023-11-15,Wednesday,No Alert,385.0,No,125
+2023-11-16,Thursday,No Alert,289.0,No,120
+2023-11-17,Friday,No Alert,378.0,No,137
+2023-11-18,Saturday,No Alert,335.0,No,157
+2023-11-19,Sunday,No Alert,397.0,No,147
+2023-11-20,Monday,No Alert,379.0,No,146
+2023-11-21,Tuesday,No Alert,427.0,No,132
+2023-11-22,Wednesday,No Alert,379.0,No,150
+2023-11-23,Thursday,No Alert,276.0,No,152
+2023-11-24,Friday,No Alert,344.0,No,171
+2023-11-25,Saturday,No Alert,295.0,No,125
+2023-11-26,Sunday,No Alert,325.0,No,87
+2023-11-27,Monday,No Alert,416.0,No,159
+2023-11-28,Tuesday,No Alert,377.0,No,148
+2023-11-29,Wednesday,No Alert,318.0,No,132
+2023-11-30,Thursday,No Alert,304.0,No,142
+2023-12-01,Friday,No Alert,351.0,No,133
+2023-12-02,Saturday,Coldwave,295.0,No,104
+2023-12-03,Sunday,No Alert,320.0,No,110
+2023-12-04,Monday,Coldwave,364.0,No,183
+2023-12-05,Tuesday,No Alert,402.0,No,166
+2023-12-06,Wednesday,Coldwave,377.0,No,164
+2023-12-07,Thursday,Coldwave,247.0,No,181
+2023-12-08,Friday,No Alert,364.0,No,129
+2023-12-09,Saturday,No Alert,353.0,No,113
+2023-12-10,Sunday,No Alert,368.0,No,121
+2023-12-11,Monday,No Alert,422.0,No,229
+2023-12-12,Tuesday,No Alert,256.0,No,110
+2023-12-13,Wednesday,No Alert,322.0,No,165
+2023-12-14,Thursday,No Alert,375.0,No,132
+2023-12-15,Friday,No Alert,277.0,No,117
+2023-12-16,Saturday,Coldwave,414.0,No,112
+2023-12-17,Sunday,No Alert,364.0,No,95
+2023-12-18,Monday,Coldwave,385.0,No,166
+2023-12-19,Tuesday,No Alert,321.0,No,152
+2023-12-20,Wednesday,Coldwave,383.0,No,167
+2023-12-21,Thursday,No Alert,393.0,No,159
+2023-12-22,Friday,No Alert,355.0,No,138
+2023-12-23,Saturday,No Alert,355.0,No,151
+2023-12-24,Sunday,No Alert,355.0,No,115
+2023-12-25,Monday,Coldwave,304.0,No,181
+2023-12-26,Tuesday,No Alert,335.0,No,118
+2023-12-27,Wednesday,No Alert,334.0,No,144
+2023-12-28,Thursday,No Alert,357.0,No,128
+2023-12-29,Friday,No Alert,384.0,No,169
+2023-12-30,Saturday,No Alert,291.0,No,95
+2023-12-31,Sunday,No Alert,332.0,No,108
+2024-01-01,Monday,No Alert,403.0,Yes,206
+2024-01-02,Tuesday,No Alert,302.0,Yes,171
+2024-01-03,Wednesday,No Alert,297.0,Yes,156
+2024-01-04,Thursday,No Alert,342.0,Yes,202
+2024-01-05,Friday,No Alert,370.0,Yes,128
+2024-01-06,Saturday,No Alert,331.0,Yes,173
+2024-01-07,Sunday,No Alert,389.0,Yes,184
+2024-01-08,Monday,No Alert,367.0,Yes,198
+2024-01-09,Tuesday,No Alert,365.0,Yes,168
+2024-01-10,Wednesday,No Alert,350.0,Yes,146
+2024-01-11,Thursday,No Alert,429.0,Yes,169
+2024-01-12,Friday,Coldwave,313.0,Yes,201
+2024-01-13,Saturday,No Alert,231.0,Yes,115
+2024-01-14,Sunday,Coldwave,392.0,Yes,194
+2024-01-15,Monday,Coldwave,298.0,Yes,220
+2024-01-16,Tuesday,No Alert,321.0,Yes,120
+2024-01-17,Wednesday,No Alert,374.0,Yes,187
+2024-01-18,Thursday,No Alert,241.0,Yes,126
+2024-01-19,Friday,No Alert,255.0,Yes,181
+2024-01-20,Saturday,Coldwave,238.0,Yes,162
+2024-01-21,Sunday,No Alert,273.0,Yes,133
+2024-01-22,Monday,Coldwave,326.0,Yes,230
+2024-01-23,Tuesday,Coldwave,328.0,Yes,208
+2024-01-24,Wednesday,No Alert,316.0,Yes,182
+2024-01-25,Thursday,No Alert,238.0,Yes,144
+2024-01-26,Friday,No Alert,195.0,Yes,122
+2024-01-27,Saturday,No Alert,300.0,Yes,159
+2024-01-28,Sunday,No Alert,274.0,Yes,156
+2024-01-29,Monday,Coldwave,314.0,Yes,171
+2024-01-30,Tuesday,No Alert,323.0,Yes,165
+2024-01-31,Wednesday,No Alert,296.0,Yes,161
+2024-02-01,Thursday,No Alert,322.0,Yes,169
+2024-02-02,Friday,No Alert,296.0,Yes,194
+2024-02-03,Saturday,No Alert,308.0,Yes,179
+2024-02-04,Sunday,No Alert,250.0,Yes,136
+2024-02-05,Monday,No Alert,272.0,Yes,160
+2024-02-06,Tuesday,No Alert,286.0,Yes,132
+2024-02-07,Wednesday,No Alert,312.0,Yes,134
+2024-02-08,Thursday,No Alert,256.0,Yes,156
+2024-02-09,Friday,No Alert,295.0,Yes,140
+2024-02-10,Saturday,No Alert,257.0,Yes,98
+2024-02-11,Sunday,No Alert,261.0,Yes,158
+2024-02-12,Monday,No Alert,302.0,Yes,213
+2024-02-13,Tuesday,No Alert,173.0,Yes,168
+2024-02-14,Wednesday,No Alert,202.0,Yes,167
+2024-02-15,Thursday,No Alert,191.0,Yes,193
+2024-02-16,Friday,No Alert,151.0,Yes,128
+2024-02-17,Saturday,No Alert,223.0,Yes,174
+2024-02-18,Sunday,No Alert,285.0,Yes,132
+2024-02-19,Monday,No Alert,236.0,Yes,172
+2024-02-20,Tuesday,No Alert,255.0,Yes,116
+2024-02-21,Wednesday,No Alert,293.0,Yes,137
+2024-02-22,Thursday,No Alert,301.0,Yes,168
+2024-02-23,Friday,No Alert,236.0,Yes,169
+2024-02-24,Saturday,No Alert,298.0,Yes,123
+2024-02-25,Sunday,No Alert,239.0,Yes,129
+2024-02-26,Monday,No Alert,195.0,Yes,156
+2024-02-27,Tuesday,No Alert,203.0,Yes,193
+2024-02-28,Wednesday,No Alert,,Yes,127
+2024-02-29,Thursday,No Alert,185.0,Yes,190
+2024-03-01,Friday,No Alert,207.0,No,106
+2024-03-02,Saturday,No Alert,256.0,No,124
+2024-03-03,Sunday,No Alert,295.0,No,106
+2024-03-04,Monday,No Alert,153.0,No,147
+2024-03-05,Tuesday,No Alert,231.0,No,165
+2024-03-06,Wednesday,No Alert,164.0,No,110
+2024-03-07,Thursday,No Alert,230.0,No,144
+2024-03-08,Friday,No Alert,200.0,No,149
+2024-03-09,Saturday,No Alert,121.0,No,116
+2024-03-10,Sunday,No Alert,,No,113
+2024-03-11,Monday,No Alert,171.0,No,133
+2024-03-12,Tuesday,No Alert,172.0,No,138
+2024-03-13,Wednesday,No Alert,146.0,No,113
+2024-03-14,Thursday,No Alert,162.0,No,127
+2024-03-15,Friday,No Alert,208.0,No,114
+2024-03-16,Saturday,No Alert,178.0,No,95
+2024-03-17,Sunday,No Alert,199.0,No,103
+2024-03-18,Monday,No Alert,198.0,No,128
+2024-03-19,Tuesday,No Alert,239.0,No,130
+2024-03-20,Wednesday,No Alert,162.0,No,145
+2024-03-21,Thursday,No Alert,108.0,No,119
+2024-03-22,Friday,No Alert,221.0,No,114
+2024-03-23,Saturday,No Alert,155.0,No,79
+2024-03-24,Sunday,No Alert,218.0,No,95
+2024-03-25,Monday,No Alert,183.0,No,154
+2024-03-26,Tuesday,No Alert,157.0,No,132
+2024-03-27,Wednesday,No Alert,177.0,No,102
+2024-03-28,Thursday,No Alert,247.0,No,92
+2024-03-29,Friday,No Alert,250.0,No,161
+2024-03-30,Saturday,No Alert,157.0,No,121
+2024-03-31,Sunday,No Alert,159.0,No,87
+2024-04-01,Monday,No Alert,198.0,No,132
+2024-04-02,Tuesday,No Alert,110.0,No,117
+2024-04-03,Wednesday,No Alert,161.0,No,122
+2024-04-04,Thursday,Heatwave,142.0,No,139
+2024-04-05,Friday,No Alert,156.0,No,90
+2024-04-06,Saturday,No Alert,102.0,No,89
+2024-04-07,Sunday,No Alert,66.0,No,79
+2024-04-08,Monday,No Alert,42.0,No,114
+2024-04-09,Tuesday,No Alert,83.0,No,105
+2024-04-10,Wednesday,No Alert,111.0,No,128
+2024-04-11,Thursday,No Alert,116.0,No,106
+2024-04-12,Friday,No Alert,214.0,No,119
+2024-04-13,Saturday,No Alert,175.0,No,95
+2024-04-14,Sunday,No Alert,80.0,No,115
+2024-04-15,Monday,No Alert,137.0,No,156
+2024-04-16,Tuesday,No Alert,101.0,No,121
+2024-04-17,Wednesday,No Alert,105.0,No,107
+2024-04-18,Thursday,No Alert,124.0,No,98
+2024-04-19,Friday,No Alert,142.0,No,120
+2024-04-20,Saturday,No Alert,97.0,No,117
+2024-04-21,Sunday,No Alert,159.0,No,106
+2024-04-22,Monday,No Alert,58.0,No,122
+2024-04-23,Tuesday,No Alert,108.0,No,128
+2024-04-24,Wednesday,No Alert,223.0,No,109
+2024-04-25,Thursday,No Alert,114.0,No,108
+2024-04-26,Friday,No Alert,167.0,No,121
+2024-04-27,Saturday,No Alert,105.0,No,103
+2024-04-28,Sunday,No Alert,126.0,No,153
+2024-04-29,Monday,Heatwave,96.0,No,227
+2024-04-30,Tuesday,No Alert,89.0,No,106
+2024-05-01,Wednesday,No Alert,60.0,No,114
+2024-05-02,Thursday,Heatwave,113.0,No,129
+2024-05-03,Friday,Heatwave,54.0,No,149
+2024-05-04,Saturday,No Alert,121.0,No,100
+2024-05-05,Sunday,No Alert,139.0,No,97
+2024-05-06,Monday,Heatwave,105.0,No,141
+2024-05-07,Tuesday,No Alert,75.0,No,110
+2024-05-08,Wednesday,No Alert,107.0,No,102
+2024-05-09,Thursday,No Alert,72.0,No,119
+2024-05-10,Friday,Heatwave,126.0,No,155
+2024-05-11,Saturday,Heatwave,35.0,No,144
+2024-05-12,Sunday,No Alert,67.0,No,92
+2024-05-13,Monday,No Alert,35.0,No,102
+2024-05-14,Tuesday,No Alert,35.0,No,136
+2024-05-15,Wednesday,No Alert,141.0,No,120
+2024-05-16,Thursday,No Alert,119.0,No,69
+2024-05-17,Friday,No Alert,45.0,No,107
+2024-05-18,Saturday,No Alert,35.0,No,97
+2024-05-19,Sunday,No Alert,35.0,No,81
+2024-05-20,Monday,No Alert,51.0,No,127
+2024-05-21,Tuesday,Heatwave,184.0,No,132
+2024-05-22,Wednesday,No Alert,94.0,No,101
+2024-05-23,Thursday,No Alert,49.0,No,92
+2024-05-24,Friday,Heatwave,94.0,No,130
+2024-05-25,Saturday,No Alert,35.0,No,66
+2024-05-26,Sunday,Heatwave,59.0,No,133
+2024-05-27,Monday,Heatwave,76.0,No,143
+2024-05-28,Tuesday,No Alert,68.0,No,93
+2024-05-29,Wednesday,Heatwave,107.0,No,152
+2024-05-30,Thursday,No Alert,86.0,No,100
+2024-05-31,Friday,No Alert,101.0,No,104
+2024-06-01,Saturday,No Alert,39.0,No,112
+2024-06-02,Sunday,Heatwave,111.0,No,119
+2024-06-03,Monday,Heatwave,143.0,No,161
+2024-06-04,Tuesday,Heatwave,35.0,No,116
+2024-06-05,Wednesday,Heatwave,35.0,No,155
+2024-06-06,Thursday,No Alert,130.0,No,136
+2024-06-07,Friday,No Alert,61.0,No,116
+2024-06-08,Saturday,Heatwave,133.0,No,152
+2024-06-09,Sunday,No Alert,50.0,No,64
+2024-06-10,Monday,No Alert,136.0,No,117
+2024-06-11,Tuesday,Heatwave,77.0,No,140
+2024-06-12,Wednesday,Heatwave,82.0,No,105
+2024-06-13,Thursday,No Alert,142.0,No,88
+2024-06-14,Friday,No Alert,55.0,No,136
+2024-06-15,Saturday,Heatwave,35.0,No,139
+2024-06-16,Sunday,No Alert,52.0,No,99
+2024-06-17,Monday,No Alert,93.0,No,138
+2024-06-18,Tuesday,No Alert,35.0,No,84
+2024-06-19,Wednesday,Heatwave,102.0,No,133
+2024-06-20,Thursday,Heatwave,50.0,No,149
+2024-06-21,Friday,No Alert,127.0,No,109
+2024-06-22,Saturday,Heatwave,35.0,No,99
+2024-06-23,Sunday,No Alert,41.0,No,80
+2024-06-24,Monday,No Alert,35.0,No,119
+2024-06-25,Tuesday,Heatwave,41.0,No,155
+2024-06-26,Wednesday,No Alert,90.0,No,126
+2024-06-27,Thursday,No Alert,71.0,No,118
+2024-06-28,Friday,No Alert,69.0,No,117
+2024-06-29,Saturday,No Alert,74.0,No,99
+2024-06-30,Sunday,No Alert,91.0,No,101
+2024-07-01,Monday,No Alert,38.0,Yes,147
+2024-07-02,Tuesday,No Alert,116.0,Yes,156
+2024-07-03,Wednesday,No Alert,115.0,Yes,98
+2024-07-04,Thursday,No Alert,104.0,Yes,134
+2024-07-05,Friday,No Alert,113.0,Yes,109
+2024-07-06,Saturday,No Alert,102.0,Yes,89
+2024-07-07,Sunday,No Alert,182.0,Yes,103
+2024-07-08,Monday,No Alert,87.0,Yes,148
+2024-07-09,Tuesday,No Alert,79.0,Yes,153
+2024-07-10,Wednesday,No Alert,60.0,Yes,170
+2024-07-11,Thursday,No Alert,49.0,Yes,133
+2024-07-12,Friday,No Alert,41.0,Yes,149
+2024-07-13,Saturday,No Alert,58.0,Yes,106
+2024-07-14,Sunday,No Alert,96.0,Yes,140
+2024-07-15,Monday,No Alert,116.0,Yes,168
+2024-07-16,Tuesday,No Alert,,Yes,155
+2024-07-17,Wednesday,No Alert,70.0,Yes,137
+2024-07-18,Thursday,No Alert,146.0,Yes,119
+2024-07-19,Friday,No Alert,141.0,Yes,160
+2024-07-20,Saturday,No Alert,102.0,Yes,129
+2024-07-21,Sunday,No Alert,81.0,Yes,122
+2024-07-22,Monday,No Alert,137.0,Yes,160
+2024-07-23,Tuesday,No Alert,,Yes,127
+2024-07-24,Wednesday,No Alert,51.0,Yes,149
+2024-07-25,Thursday,No Alert,115.0,Yes,125
+2024-07-26,Friday,No Alert,131.0,Yes,140
+2024-07-27,Saturday,No Alert,81.0,Yes,117
+2024-07-28,Sunday,No Alert,132.0,Yes,142
+2024-07-29,Monday,No Alert,60.0,Yes,135
+2024-07-30,Tuesday,No Alert,187.0,Yes,153
+2024-07-31,Wednesday,No Alert,185.0,Yes,165
+2024-08-01,Thursday,No Alert,,Yes,145
+2024-08-02,Friday,No Alert,150.0,Yes,145
+2024-08-03,Saturday,No Alert,35.0,Yes,101
+2024-08-04,Sunday,No Alert,85.0,Yes,119
+2024-08-05,Monday,No Alert,126.0,Yes,145
+2024-08-06,Tuesday,No Alert,93.0,Yes,150
+2024-08-07,Wednesday,No Alert,176.0,Yes,112
+2024-08-08,Thursday,No Alert,236.0,Yes,172
+2024-08-09,Friday,No Alert,95.0,Yes,145
+2024-08-10,Saturday,No Alert,112.0,Yes,127
+2024-08-11,Sunday,No Alert,163.0,Yes,105
+2024-08-12,Monday,No Alert,227.0,Yes,146
+2024-08-13,Tuesday,No Alert,102.0,Yes,151
+2024-08-14,Wednesday,No Alert,170.0,Yes,128
+2024-08-15,Thursday,No Alert,243.0,Yes,96
+2024-08-16,Friday,No Alert,89.0,Yes,147
+2024-08-17,Saturday,No Alert,108.0,Yes,114
+2024-08-18,Sunday,No Alert,149.0,Yes,130
+2024-08-19,Monday,No Alert,147.0,Yes,153
+2024-08-20,Tuesday,No Alert,209.0,Yes,168
+2024-08-21,Wednesday,No Alert,186.0,Yes,145
+2024-08-22,Thursday,No Alert,97.0,Yes,141
+2024-08-23,Friday,No Alert,203.0,Yes,134
+2024-08-24,Saturday,No Alert,156.0,Yes,107
+2024-08-25,Sunday,No Alert,242.0,Yes,149
+2024-08-26,Monday,No Alert,158.0,Yes,167
+2024-08-27,Tuesday,No Alert,160.0,Yes,123
+2024-08-28,Wednesday,No Alert,216.0,Yes,144
+2024-08-29,Thursday,No Alert,228.0,Yes,184
+2024-08-30,Friday,No Alert,216.0,Yes,170
+2024-08-31,Saturday,No Alert,123.0,Yes,108
+2024-09-01,Sunday,No Alert,225.0,Yes,110
+2024-09-02,Monday,No Alert,157.0,Yes,136
+2024-09-03,Tuesday,No Alert,216.0,Yes,141
+2024-09-04,Wednesday,No Alert,144.0,Yes,155
+2024-09-05,Thursday,No Alert,231.0,Yes,136
+2024-09-06,Friday,No Alert,177.0,Yes,121
+2024-09-07,Saturday,No Alert,158.0,Yes,121
+2024-09-08,Sunday,No Alert,250.0,Yes,128
+2024-09-09,Monday,No Alert,231.0,Yes,119
+2024-09-10,Tuesday,No Alert,195.0,Yes,150
+2024-09-11,Wednesday,No Alert,290.0,Yes,155
+2024-09-12,Thursday,No Alert,208.0,Yes,161
+2024-09-13,Friday,No Alert,231.0,Yes,115
+2024-09-14,Saturday,No Alert,244.0,Yes,104
+2024-09-15,Sunday,No Alert,207.0,Yes,124
+2024-09-16,Monday,No Alert,258.0,Yes,161
+2024-09-17,Tuesday,No Alert,215.0,Yes,155
+2024-09-18,Wednesday,No Alert,223.0,Yes,135
+2024-09-19,Thursday,No Alert,305.0,Yes,159
+2024-09-20,Friday,No Alert,200.0,Yes,180
+2024-09-21,Saturday,No Alert,140.0,Yes,163
+2024-09-22,Sunday,No Alert,323.0,Yes,151
+2024-09-23,Monday,No Alert,368.0,Yes,243
+2024-09-24,Tuesday,No Alert,237.0,Yes,119
+2024-09-25,Wednesday,No Alert,171.0,Yes,167
+2024-09-26,Thursday,No Alert,246.0,Yes,127
+2024-09-27,Friday,No Alert,249.0,Yes,130
+2024-09-28,Saturday,No Alert,256.0,Yes,148
+2024-09-29,Sunday,No Alert,217.0,Yes,185
+2024-09-30,Monday,No Alert,295.0,Yes,176
+2024-10-01,Tuesday,No Alert,295.0,No,172
+2024-10-02,Wednesday,No Alert,206.0,No,122
+2024-10-03,Thursday,No Alert,307.0,No,138
+2024-10-04,Friday,No Alert,370.0,No,132
+2024-10-05,Saturday,No Alert,287.0,No,153
+2024-10-06,Sunday,No Alert,267.0,No,134
+2024-10-07,Monday,No Alert,277.0,No,144
+2024-10-08,Tuesday,No Alert,314.0,No,145
+2024-10-09,Wednesday,No Alert,210.0,No,135
+2024-10-10,Thursday,No Alert,297.0,No,100
+2024-10-11,Friday,No Alert,274.0,No,110
+2024-10-12,Saturday,No Alert,377.0,No,135
+2024-10-13,Sunday,No Alert,288.0,No,140
+2024-10-14,Monday,No Alert,373.0,No,127
+2024-10-15,Tuesday,No Alert,,No,155
+2024-10-16,Wednesday,No Alert,328.0,No,117
+2024-10-17,Thursday,No Alert,317.0,No,104
+2024-10-18,Friday,No Alert,266.0,No,159
+2024-10-19,Saturday,No Alert,315.0,No,121
+2024-10-20,Sunday,No Alert,363.0,No,154
+2024-10-21,Monday,No Alert,295.0,No,181
+2024-10-22,Tuesday,No Alert,236.0,No,152
+2024-10-23,Wednesday,No Alert,313.0,No,137
+2024-10-24,Thursday,No Alert,274.0,No,145
+2024-10-25,Friday,No Alert,301.0,No,141
+2024-10-26,Saturday,No Alert,314.0,No,141
+2024-10-27,Sunday,No Alert,243.0,No,132
+2024-10-28,Monday,No Alert,248.0,No,154
+2024-10-29,Tuesday,No Alert,344.0,No,150
+2024-10-30,Wednesday,No Alert,300.0,No,120
+2024-10-31,Thursday,No Alert,210.0,No,153
+2024-11-01,Friday,No Alert,362.0,No,124
+2024-11-02,Saturday,No Alert,340.0,No,144
+2024-11-03,Sunday,No Alert,297.0,No,133
+2024-11-04,Monday,No Alert,271.0,No,152
+2024-11-05,Tuesday,No Alert,369.0,No,157
+2024-11-06,Wednesday,No Alert,349.0,No,156
+2024-11-07,Thursday,No Alert,441.0,No,129
+2024-11-08,Friday,No Alert,354.0,No,136
+2024-11-09,Saturday,No Alert,354.0,No,139
+2024-11-10,Sunday,No Alert,330.0,No,120
+2024-11-11,Monday,No Alert,375.0,No,154
+2024-11-12,Tuesday,No Alert,367.0,No,110
+2024-11-13,Wednesday,No Alert,396.0,No,166
+2024-11-14,Thursday,No Alert,317.0,No,147
+2024-11-15,Friday,No Alert,322.0,No,170
+2024-11-16,Saturday,No Alert,321.0,No,142
+2024-11-17,Sunday,No Alert,379.0,No,131
+2024-11-18,Monday,No Alert,411.0,No,195
+2024-11-19,Tuesday,No Alert,324.0,No,132
+2024-11-20,Wednesday,No Alert,326.0,No,135
+2024-11-21,Thursday,No Alert,360.0,No,176
+2024-11-22,Friday,No Alert,335.0,No,125
+2024-11-23,Saturday,No Alert,390.0,No,118
+2024-11-24,Sunday,No Alert,246.0,No,131
+2024-11-25,Monday,No Alert,311.0,No,190
+2024-11-26,Tuesday,No Alert,313.0,No,102
+2024-11-27,Wednesday,No Alert,244.0,No,127
+2024-11-28,Thursday,No Alert,306.0,No,155
+2024-11-29,Friday,No Alert,308.0,No,104
+2024-11-30,Saturday,No Alert,340.0,No,152
+2024-12-01,Sunday,No Alert,400.0,No,147
+2024-12-02,Monday,Coldwave,339.0,No,184
+2024-12-03,Tuesday,Coldwave,304.0,No,202
+2024-12-04,Wednesday,Coldwave,347.0,No,186
+2024-12-05,Thursday,Coldwave,397.0,No,173
+2024-12-06,Friday,No Alert,306.0,No,88
+2024-12-07,Saturday,No Alert,309.0,No,121
+2024-12-08,Sunday,No Alert,375.0,No,112
+2024-12-09,Monday,Coldwave,340.0,No,210
+2024-12-10,Tuesday,No Alert,379.0,No,152
+2024-12-11,Wednesday,Coldwave,349.0,No,206
+2024-12-12,Thursday,No Alert,381.0,No,127
+2024-12-13,Friday,Coldwave,302.0,No,150
+2024-12-14,Saturday,No Alert,348.0,No,134
+2024-12-15,Sunday,No Alert,338.0,No,140
+2024-12-16,Monday,No Alert,293.0,No,210
+2024-12-17,Tuesday,No Alert,277.0,No,128
+2024-12-18,Wednesday,No Alert,377.0,No,172
+2024-12-19,Thursday,Coldwave,330.0,No,190
+2024-12-20,Friday,No Alert,299.0,No,162
+2024-12-21,Saturday,No Alert,340.0,No,143
+2024-12-22,Sunday,No Alert,395.0,No,178
+2024-12-23,Monday,No Alert,241.0,No,120
+2024-12-24,Tuesday,No Alert,275.0,No,133
+2024-12-25,Wednesday,Coldwave,300.0,No,126
+2024-12-26,Thursday,No Alert,407.0,No,143
+2024-12-27,Friday,No Alert,353.0,No,163
+2024-12-28,Saturday,No Alert,374.0,No,118
+2024-12-29,Sunday,No Alert,287.0,No,125
+2024-12-30,Monday,No Alert,287.0,No,134
+2024-12-31,Tuesday,No Alert,356.0,No,205
+2025-01-01,Wednesday,No Alert,339.0,Yes,200
+2025-01-02,Thursday,No Alert,360.0,Yes,136
+2025-01-03,Friday,No Alert,326.0,Yes,157
+2025-01-04,Saturday,No Alert,345.0,Yes,185
+2025-01-05,Sunday,Coldwave,339.0,Yes,178
+2025-01-06,Monday,No Alert,366.0,Yes,181
+2025-01-07,Tuesday,No Alert,366.0,Yes,224
+2025-01-08,Wednesday,No Alert,255.0,Yes,125
+2025-01-09,Thursday,No Alert,226.0,Yes,180
+2025-01-10,Friday,No Alert,370.0,Yes,155
+2025-01-11,Saturday,No Alert,377.0,Yes,138
+2025-01-12,Sunday,No Alert,277.0,Yes,128
+2025-01-13,Monday,No Alert,237.0,Yes,189
+2025-01-14,Tuesday,No Alert,324.0,Yes,180
+2025-01-15,Wednesday,No Alert,360.0,Yes,181
+2025-01-16,Thursday,No Alert,397.0,Yes,177
+2025-01-17,Friday,No Alert,338.0,Yes,208
+2025-01-18,Saturday,No Alert,297.0,Yes,157
+2025-01-19,Sunday,No Alert,272.0,Yes,143
+2025-01-20,Monday,No Alert,311.0,Yes,202
+2025-01-21,Tuesday,No Alert,295.0,Yes,123
+2025-01-22,Wednesday,No Alert,261.0,Yes,143
+2025-01-23,Thursday,No Alert,397.0,Yes,181
+2025-01-24,Friday,Coldwave,383.0,Yes,227
+2025-01-25,Saturday,Coldwave,352.0,Yes,126
+2025-01-26,Sunday,No Alert,258.0,Yes,145
+2025-01-27,Monday,No Alert,336.0,Yes,213
+2025-01-28,Tuesday,Coldwave,324.0,Yes,197
+2025-01-29,Wednesday,No Alert,314.0,Yes,179
+2025-01-30,Thursday,No Alert,348.0,Yes,142
+2025-01-31,Friday,Coldwave,318.0,Yes,188
+2025-02-01,Saturday,No Alert,321.0,Yes,157
+2025-02-02,Sunday,No Alert,314.0,Yes,163
+2025-02-03,Monday,No Alert,299.0,Yes,179
+2025-02-04,Tuesday,No Alert,201.0,Yes,117
+2025-02-05,Wednesday,No Alert,283.0,Yes,142
+2025-02-06,Thursday,No Alert,253.0,Yes,152
+2025-02-07,Friday,No Alert,218.0,Yes,127
+2025-02-08,Saturday,No Alert,349.0,Yes,139
+2025-02-09,Sunday,No Alert,349.0,Yes,134
+2025-02-10,Monday,No Alert,330.0,Yes,200
+2025-02-11,Tuesday,No Alert,278.0,Yes,191
+2025-02-12,Wednesday,No Alert,325.0,Yes,155
+2025-02-13,Thursday,No Alert,263.0,Yes,165
+2025-02-14,Friday,No Alert,269.0,Yes,173
+2025-02-15,Saturday,No Alert,209.0,Yes,128
+2025-02-16,Sunday,No Alert,273.0,Yes,136
+2025-02-17,Monday,No Alert,256.0,Yes,184
+2025-02-18,Tuesday,No Alert,192.0,Yes,181
+2025-02-19,Wednesday,No Alert,246.0,Yes,171
+2025-02-20,Thursday,No Alert,243.0,Yes,186
+2025-02-21,Friday,No Alert,325.0,Yes,178
+2025-02-22,Saturday,No Alert,282.0,Yes,170
+2025-02-23,Sunday,No Alert,240.0,Yes,148
+2025-02-24,Monday,No Alert,248.0,Yes,141
+2025-02-25,Tuesday,No Alert,237.0,Yes,117
+2025-02-26,Wednesday,No Alert,223.0,Yes,183
+2025-02-27,Thursday,No Alert,181.0,Yes,138
+2025-02-28,Friday,No Alert,221.0,Yes,125
+2025-03-01,Saturday,No Alert,191.0,No,136
+2025-03-02,Sunday,No Alert,166.0,No,114
+2025-03-03,Monday,No Alert,243.0,No,161
+2025-03-04,Tuesday,No Alert,,No,175
+2025-03-05,Wednesday,No Alert,135.0,No,111
+2025-03-06,Thursday,No Alert,207.0,No,134
+2025-03-07,Friday,No Alert,255.0,No,111
+2025-03-08,Saturday,No Alert,256.0,No,133
+2025-03-09,Sunday,No Alert,252.0,No,115
+2025-03-10,Monday,No Alert,205.0,No,135
+2025-03-11,Tuesday,No Alert,163.0,No,141
+2025-03-12,Wednesday,No Alert,150.0,No,128
+2025-03-13,Thursday,No Alert,212.0,No,138
+2025-03-14,Friday,No Alert,211.0,No,131
+2025-03-15,Saturday,No Alert,249.0,No,142
+2025-03-16,Sunday,No Alert,,No,131
+2025-03-17,Monday,No Alert,181.0,No,161
+2025-03-18,Tuesday,No Alert,128.0,No,110
+2025-03-19,Wednesday,No Alert,,No,114
+2025-03-20,Thursday,No Alert,189.0,No,145
+2025-03-21,Friday,No Alert,168.0,No,112
+2025-03-22,Saturday,No Alert,149.0,No,121
+2025-03-23,Sunday,No Alert,184.0,No,137
+2025-03-24,Monday,No Alert,148.0,No,125
+2025-03-25,Tuesday,No Alert,140.0,No,120
+2025-03-26,Wednesday,No Alert,180.0,No,111
+2025-03-27,Thursday,No Alert,145.0,No,127
+2025-03-28,Friday,No Alert,172.0,No,96
+2025-03-29,Saturday,No Alert,171.0,No,130
+2025-03-30,Sunday,No Alert,105.0,No,89
+2025-03-31,Monday,No Alert,133.0,No,167
+2025-04-01,Tuesday,No Alert,217.0,No,94
+2025-04-02,Wednesday,No Alert,98.0,No,129
+2025-04-03,Thursday,No Alert,53.0,No,109
+2025-04-04,Friday,No Alert,62.0,No,103
+2025-04-05,Saturday,Heatwave,145.0,No,134
+2025-04-06,Sunday,No Alert,143.0,No,98
+2025-04-07,Monday,No Alert,134.0,No,134
+2025-04-08,Tuesday,No Alert,192.0,No,177
+2025-04-09,Wednesday,No Alert,35.0,No,123
+2025-04-10,Thursday,No Alert,151.0,No,122
+2025-04-11,Friday,No Alert,201.0,No,138
+2025-04-12,Saturday,No Alert,78.0,No,112
+2025-04-13,Sunday,Heatwave,110.0,No,126
+2025-04-14,Monday,No Alert,91.0,No,107
+2025-04-15,Tuesday,No Alert,83.0,No,124
+2025-04-16,Wednesday,No Alert,107.0,No,148
+2025-04-17,Thursday,No Alert,184.0,No,122
+2025-04-18,Friday,No Alert,201.0,No,115
+2025-04-19,Saturday,No Alert,101.0,No,78
+2025-04-20,Sunday,No Alert,200.0,No,113
+2025-04-21,Monday,No Alert,114.0,No,137
+2025-04-22,Tuesday,No Alert,190.0,No,141
+2025-04-23,Wednesday,No Alert,105.0,No,134
+2025-04-24,Thursday,No Alert,113.0,No,113
+2025-04-25,Friday,No Alert,122.0,No,90
+2025-04-26,Saturday,No Alert,247.0,No,156
+2025-04-27,Sunday,No Alert,141.0,No,97
+2025-04-28,Monday,No Alert,69.0,No,118
+2025-04-29,Tuesday,No Alert,143.0,No,109
+2025-04-30,Wednesday,No Alert,82.0,No,98
+2025-05-01,Thursday,Heatwave,75.0,No,124
+2025-05-02,Friday,No Alert,136.0,No,122
+2025-05-03,Saturday,No Alert,95.0,No,118
+2025-05-04,Sunday,Heatwave,105.0,No,109
+2025-05-05,Monday,No Alert,92.0,No,106
+2025-05-06,Tuesday,No Alert,105.0,No,102
+2025-05-07,Wednesday,Heatwave,108.0,No,135
+2025-05-08,Thursday,Heatwave,35.0,No,122
+2025-05-09,Friday,No Alert,117.0,No,127
+2025-05-10,Saturday,Heatwave,41.0,No,151
+2025-05-11,Sunday,Heatwave,35.0,No,156
+2025-05-12,Monday,No Alert,81.0,No,129
+2025-05-13,Tuesday,No Alert,86.0,No,126
+2025-05-14,Wednesday,Heatwave,50.0,No,116
+2025-05-15,Thursday,Heatwave,118.0,No,125
+2025-05-16,Friday,No Alert,35.0,No,101
+2025-05-17,Saturday,No Alert,60.0,No,79
+2025-05-18,Sunday,No Alert,51.0,No,125
+2025-05-19,Monday,No Alert,75.0,No,139
+2025-05-20,Tuesday,No Alert,89.0,No,130
+2025-05-21,Wednesday,No Alert,35.0,No,109
+2025-05-22,Thursday,Heatwave,108.0,No,181
+2025-05-23,Friday,No Alert,77.0,No,106
+2025-05-24,Saturday,No Alert,35.0,No,86
+2025-05-25,Sunday,Heatwave,35.0,No,153
+2025-05-26,Monday,Heatwave,72.0,No,127
+2025-05-27,Tuesday,No Alert,62.0,No,99
+2025-05-28,Wednesday,Heatwave,67.0,No,139
+2025-05-29,Thursday,Heatwave,70.0,No,136
+2025-05-30,Friday,Heatwave,81.0,No,144
+2025-05-31,Saturday,No Alert,114.0,No,135
+2025-06-01,Sunday,No Alert,35.0,No,103
+2025-06-02,Monday,No Alert,35.0,No,95
+2025-06-03,Tuesday,Heatwave,35.0,No,141
+2025-06-04,Wednesday,Heatwave,83.0,No,172
+2025-06-05,Thursday,No Alert,126.0,No,135
+2025-06-06,Friday,No Alert,51.0,No,111
+2025-06-07,Saturday,No Alert,35.0,No,127
+2025-06-08,Sunday,Heatwave,35.0,No,149
+2025-06-09,Monday,Heatwave,35.0,No,155
+2025-06-10,Tuesday,Heatwave,45.0,No,171
+2025-06-11,Wednesday,No Alert,52.0,No,136
+2025-06-12,Thursday,No Alert,72.0,No,144
+2025-06-13,Friday,No Alert,57.0,No,101
+2025-06-14,Saturday,No Alert,118.0,No,89
+2025-06-15,Sunday,No Alert,41.0,No,106
+2025-06-16,Monday,No Alert,35.0,No,114
+2025-06-17,Tuesday,Heatwave,94.0,No,106
+2025-06-18,Wednesday,No Alert,35.0,No,97
+2025-06-19,Thursday,Heatwave,91.0,No,167
+2025-06-20,Friday,No Alert,78.0,No,130
+2025-06-21,Saturday,Heatwave,68.0,No,124
+2025-06-22,Sunday,No Alert,146.0,No,83
+2025-06-23,Monday,No Alert,48.0,No,116
+2025-06-24,Tuesday,Heatwave,169.0,No,146
+2025-06-25,Wednesday,No Alert,67.0,No,138
+2025-06-26,Thursday,No Alert,35.0,No,93
+2025-06-27,Friday,Heatwave,82.0,No,155
+2025-06-28,Saturday,No Alert,35.0,No,127
+2025-06-29,Sunday,No Alert,47.0,No,117
+2025-06-30,Monday,No Alert,99.0,No,112
+2025-07-01,Tuesday,No Alert,107.0,Yes,143
+2025-07-02,Wednesday,No Alert,55.0,Yes,129
+2025-07-03,Thursday,No Alert,129.0,Yes,160
+2025-07-04,Friday,No Alert,137.0,Yes,145
+2025-07-05,Saturday,No Alert,151.0,Yes,131
+2025-07-06,Sunday,No Alert,111.0,Yes,138
+2025-07-07,Monday,No Alert,150.0,Yes,190
+2025-07-08,Tuesday,No Alert,35.0,Yes,128
+2025-07-09,Wednesday,No Alert,77.0,Yes,138
+2025-07-10,Thursday,No Alert,54.0,Yes,133
+2025-07-11,Friday,No Alert,99.0,Yes,177
+2025-07-12,Saturday,No Alert,70.0,Yes,128
+2025-07-13,Sunday,No Alert,89.0,Yes,108
+2025-07-14,Monday,No Alert,183.0,Yes,189
+2025-07-15,Tuesday,No Alert,92.0,Yes,145
+2025-07-16,Wednesday,No Alert,120.0,Yes,142
+2025-07-17,Thursday,No Alert,92.0,Yes,153
+2025-07-18,Friday,No Alert,108.0,Yes,114
+2025-07-19,Saturday,No Alert,106.0,Yes,124
+2025-07-20,Sunday,No Alert,128.0,Yes,112
+2025-07-21,Monday,No Alert,162.0,Yes,159
+2025-07-22,Tuesday,No Alert,185.0,Yes,124
+2025-07-23,Wednesday,No Alert,126.0,Yes,146
+2025-07-24,Thursday,No Alert,,Yes,120
+2025-07-25,Friday,No Alert,,Yes,140
+2025-07-26,Saturday,No Alert,114.0,Yes,109
+2025-07-27,Sunday,No Alert,162.0,Yes,184
+2025-07-28,Monday,No Alert,160.0,Yes,153
+2025-07-29,Tuesday,No Alert,133.0,Yes,137
+2025-07-30,Wednesday,No Alert,165.0,Yes,153
+2025-07-31,Thursday,No Alert,149.0,Yes,140
+2025-08-01,Friday,No Alert,183.0,Yes,156
+2025-08-02,Saturday,No Alert,144.0,Yes,115
+2025-08-03,Sunday,No Alert,117.0,Yes,151
+2025-08-04,Monday,No Alert,150.0,Yes,157
+2025-08-05,Tuesday,No Alert,35.0,Yes,150
+2025-08-06,Wednesday,No Alert,157.0,Yes,140
+2025-08-07,Thursday,No Alert,35.0,Yes,158
+2025-08-08,Friday,No Alert,66.0,Yes,143
+2025-08-09,Saturday,No Alert,166.0,Yes,125
+2025-08-10,Sunday,No Alert,169.0,Yes,137
+2025-08-11,Monday,No Alert,98.0,Yes,148
+2025-08-12,Tuesday,No Alert,120.0,Yes,138
+2025-08-13,Wednesday,No Alert,216.0,Yes,134
+2025-08-14,Thursday,No Alert,135.0,Yes,129
+2025-08-15,Friday,No Alert,260.0,Yes,147
+2025-08-16,Saturday,No Alert,161.0,Yes,85
+2025-08-17,Sunday,No Alert,182.0,Yes,122
+2025-08-18,Monday,No Alert,238.0,Yes,200
+2025-08-19,Tuesday,No Alert,174.0,Yes,161
+2025-08-20,Wednesday,No Alert,125.0,Yes,160
+2025-08-21,Thursday,No Alert,,Yes,135
+2025-08-22,Friday,No Alert,173.0,Yes,142
+2025-08-23,Saturday,No Alert,116.0,Yes,161
+2025-08-24,Sunday,No Alert,168.0,Yes,120
+2025-08-25,Monday,No Alert,148.0,Yes,170
+2025-08-26,Tuesday,No Alert,226.0,Yes,191
+2025-08-27,Wednesday,No Alert,188.0,Yes,158
+2025-08-28,Thursday,No Alert,176.0,Yes,151
+2025-08-29,Friday,No Alert,187.0,Yes,142
+2025-08-30,Saturday,No Alert,204.0,Yes,125
+2025-08-31,Sunday,No Alert,224.0,Yes,98
+2025-09-01,Monday,No Alert,154.0,Yes,179
+2025-09-02,Tuesday,No Alert,,Yes,166
+2025-09-03,Wednesday,No Alert,253.0,Yes,133
+2025-09-04,Thursday,No Alert,187.0,Yes,126
+2025-09-05,Friday,No Alert,144.0,Yes,170
+2025-09-06,Saturday,No Alert,231.0,Yes,140
+2025-09-07,Sunday,No Alert,234.0,Yes,132
+2025-09-08,Monday,No Alert,147.0,Yes,137
+2025-09-09,Tuesday,No Alert,,Yes,174
+2025-09-10,Wednesday,No Alert,253.0,Yes,179
+2025-09-11,Thursday,No Alert,239.0,Yes,160
+2025-09-12,Friday,No Alert,253.0,Yes,193
+2025-09-13,Saturday,No Alert,164.0,Yes,157
+2025-09-14,Sunday,No Alert,245.0,Yes,133
+2025-09-15,Monday,No Alert,219.0,Yes,208
+2025-09-16,Tuesday,No Alert,213.0,Yes,115
+2025-09-17,Wednesday,No Alert,276.0,Yes,140
+2025-09-18,Thursday,No Alert,306.0,Yes,164
+2025-09-19,Friday,No Alert,322.0,Yes,159
+2025-09-20,Saturday,No Alert,303.0,Yes,119
+2025-09-21,Sunday,No Alert,241.0,Yes,177
+2025-09-22,Monday,No Alert,265.0,Yes,161
+2025-09-23,Tuesday,No Alert,285.0,Yes,196
+2025-09-24,Wednesday,No Alert,259.0,Yes,157
+2025-09-25,Thursday,No Alert,261.0,Yes,160
+2025-09-26,Friday,No Alert,295.0,Yes,189
+2025-09-27,Saturday,No Alert,257.0,Yes,156
+2025-09-28,Sunday,No Alert,230.0,Yes,117
+2025-09-29,Monday,No Alert,246.0,Yes,143
+2025-09-30,Tuesday,No Alert,295.0,Yes,173
+2025-10-01,Wednesday,No Alert,269.0,No,118
+2025-10-02,Thursday,No Alert,286.0,No,153
+2025-10-03,Friday,No Alert,303.0,No,160
+2025-10-04,Saturday,No Alert,259.0,No,115
+2025-10-05,Sunday,No Alert,312.0,No,130
+2025-10-06,Monday,No Alert,297.0,No,161
+2025-10-07,Tuesday,No Alert,226.0,No,132
+2025-10-08,Wednesday,No Alert,349.0,No,157
+2025-10-09,Thursday,No Alert,263.0,No,194
+2025-10-10,Friday,No Alert,213.0,No,140
+2025-10-11,Saturday,No Alert,243.0,No,117
+2025-10-12,Sunday,No Alert,246.0,No,158
+2025-10-13,Monday,No Alert,296.0,No,195
+2025-10-14,Tuesday,No Alert,283.0,No,129
+2025-10-15,Wednesday,No Alert,282.0,No,124
+2025-10-16,Thursday,No Alert,327.0,No,104
+2025-10-17,Friday,No Alert,317.0,No,145
+2025-10-18,Saturday,No Alert,317.0,No,103
+2025-10-19,Sunday,No Alert,323.0,No,175
+2025-10-20,Monday,No Alert,334.0,No,165
+2025-10-21,Tuesday,No Alert,213.0,No,154
+2025-10-22,Wednesday,No Alert,294.0,No,140
+2025-10-23,Thursday,No Alert,214.0,No,140
+2025-10-24,Friday,No Alert,315.0,No,142
+2025-10-25,Saturday,No Alert,315.0,No,133
+2025-10-26,Sunday,No Alert,364.0,No,131
+2025-10-27,Monday,No Alert,372.0,No,221
+2025-10-28,Tuesday,No Alert,329.0,No,191
+2025-10-29,Wednesday,No Alert,299.0,No,202
+2025-10-30,Thursday,No Alert,344.0,No,142
+2025-10-31,Friday,No Alert,300.0,No,135
+2025-11-01,Saturday,No Alert,325.0,No,116
+2025-11-02,Sunday,No Alert,371.0,No,147
+2025-11-03,Monday,No Alert,303.0,No,121
+2025-11-04,Tuesday,No Alert,366.0,No,186
+2025-11-05,Wednesday,No Alert,361.0,No,157
+2025-11-06,Thursday,No Alert,289.0,No,144
+2025-11-07,Friday,No Alert,377.0,No,161
+2025-11-08,Saturday,No Alert,365.0,No,120
+2025-11-09,Sunday,No Alert,340.0,No,106
+2025-11-10,Monday,No Alert,302.0,No,172
+2025-11-11,Tuesday,No Alert,299.0,No,129
+2025-11-12,Wednesday,No Alert,314.0,No,131
+2025-11-13,Thursday,No Alert,364.0,No,142
+2025-11-14,Friday,No Alert,297.0,No,156
+2025-11-15,Saturday,No Alert,361.0,No,131
+2025-11-16,Sunday,No Alert,286.0,No,81
+2025-11-17,Monday,No Alert,333.0,No,183
+2025-11-18,Tuesday,No Alert,348.0,No,185
+2025-11-19,Wednesday,No Alert,454.0,No,160
+2025-11-20,Thursday,No Alert,283.0,No,123
+2025-11-21,Friday,No Alert,412.0,No,150
+2025-11-22,Saturday,No Alert,353.0,No,162
+2025-11-23,Sunday,No Alert,365.0,No,123
+2025-11-24,Monday,No Alert,352.0,No,187
+2025-11-25,Tuesday,No Alert,368.0,No,173
+2025-11-26,Wednesday,No Alert,341.0,No,160
+2025-11-27,Thursday,No Alert,414.0,No,142
+2025-11-28,Friday,No Alert,328.0,No,186
+2025-11-29,Saturday,No Alert,400.0,No,159
+2025-11-30,Sunday,No Alert,320.0,No,119
+2025-12-01,Monday,No Alert,347.0,No,143
+2025-12-02,Tuesday,No Alert,301.0,No,137
+2025-12-03,Wednesday,No Alert,370.0,No,148
+2025-12-04,Thursday,Coldwave,415.0,No,166
+2025-12-05,Friday,No Alert,346.0,No,170
+2025-12-06,Saturday,No Alert,341.0,No,112
+2025-12-07,Sunday,Coldwave,300.0,No,189
+2025-12-08,Monday,No Alert,340.0,No,159
+2025-12-09,Tuesday,No Alert,278.0,No,129
+2025-12-10,Wednesday,No Alert,309.0,No,155
+2025-12-11,Thursday,No Alert,360.0,No,163
+2025-12-12,Friday,Coldwave,409.0,No,192
+2025-12-13,Saturday,Coldwave,475.0,No,168
+2025-12-14,Sunday,No Alert,322.0,No,140
+2025-12-15,Monday,No Alert,413.0,No,169
+2025-12-16,Tuesday,No Alert,359.0,No,166
+2025-12-17,Wednesday,No Alert,341.0,No,128
+2025-12-18,Thursday,No Alert,366.0,No,140
+2025-12-19,Friday,Coldwave,349.0,No,122
+2025-12-20,Saturday,Coldwave,351.0,No,143
+2025-12-21,Sunday,No Alert,327.0,No,154
+2025-12-22,Monday,No Alert,282.0,No,181
+2025-12-23,Tuesday,No Alert,275.0,No,187
+2025-12-24,Wednesday,No Alert,373.0,No,202
+2025-12-25,Thursday,No Alert,330.0,No,169
+2025-12-26,Friday,No Alert,,No,140
+2025-12-27,Saturday,Coldwave,341.0,No,152
+2025-12-28,Sunday,No Alert,376.0,No,108
+2025-12-29,Monday,No Alert,347.0,No,149
+2025-12-30,Tuesday,No Alert,309.0,No,159
+2025-12-31,Wednesday,Coldwave,392.0,No,172
